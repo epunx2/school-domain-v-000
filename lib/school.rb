@@ -1,7 +1,9 @@
 # code here!
 class School
 
-  attr_accessor :school
+  def initialize(school)
+    @school = school
+  end
 
   def roster
     @roster = Hash.new(false)
@@ -11,7 +13,7 @@ class School
 
       @roster[grade] = []
       @roster[grade] << student
-
+    
   end
 
   def grade
