@@ -1,7 +1,7 @@
 # code here!
 class School
 
-  attr_accessor :school, :roster
+  attr_accessor :school
 
   def roster
     @roster = Hash.new(false)
