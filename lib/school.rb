@@ -9,7 +9,9 @@ class School
     roster = Hash.new(false)
   end
 
-  def add_student
+  def add_student(student, grade)
+    roster[9] = []
+    roster[9] << student
 
   end
 
