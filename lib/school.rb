@@ -3,6 +3,10 @@ class School
 
   attr_accessor :school, :roster
 
+  def roster
+    @roster = Hash.new(false)
+  end
+
   def add_student(student, grade)
 
       @roster[grade] = []
