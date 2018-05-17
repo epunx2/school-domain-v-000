@@ -21,7 +21,7 @@ class School
   end
 
   def grade(num)
-    @roster.key(num)
+    @roster.key(num.to_s)
   end
 
   def sort
