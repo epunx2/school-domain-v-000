@@ -5,13 +5,13 @@ class School
     @school = school
   end
 
-  def create_roster
-    roster = Hash.new(false)
+  def roster
+    @roster = Hash.new(false)
   end
 
   def add_student(student, grade)
-    roster[grade] = []
-    roster[grade] << student
+    @roster[grade] = []
+    @roster[grade] << student
   end
 
   def grade
