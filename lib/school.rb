@@ -2,9 +2,10 @@
 class School
   attr_accessor :roster
 
-  @roster = Hash.new
+  
   def initialize(name)
     @name = name
+    roster = Hash.new
   end
 
 end
